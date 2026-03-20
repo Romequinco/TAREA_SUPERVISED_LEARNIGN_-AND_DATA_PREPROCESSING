@@ -1,0 +1,24 @@
+ipykernel
+nbconvert
+nbformat
+missingno
+numpy>=1.25.2
+numpy_financial
+pandas
+matplotlib
+plotly
+seaborn
+SciPy >= 1.11.4
+Scikit-learn >= 1.4.2
+scikit-multilearn
+imbalanced-learn
+xgboost
+yfinance
+tqdm
+pyarrow
+statsmodels
+pprintpp
+ucimlrepo # Data
+prince
+openpyxl
+tslearn
