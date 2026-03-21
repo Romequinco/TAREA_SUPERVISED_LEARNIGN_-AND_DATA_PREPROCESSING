@@ -30,20 +30,24 @@ Organizar el notebook en secciones:
 
 **Decisión clave:** mantenerlo simple, legible y argumentado.
 
+HACER AL FINAL
+
 ---
 
 ### 2) Carga y alineación temporal
 
-- Cargar `navs.pickle` (NAVs de fondos). 
-- Cargar factores desde `Asia_Pacific_ex_Japan_3_Factors_Daily.csv`.
-- Parsear fechas correctamente y ponerlas como índice.
-- Ordenar cronológicamente y eliminar duplicados.
-- Quedarse con la intersección temporal entre NAVs y factores.
+- [x] Cargar `navs.pickle` (NAVs de fondos).  
+- [x] Cargar factores (`Asia_Pacific_ex_Japan_3_Factors_Daily` + `Asia_Pacific_ex_Japan_MOM_Factor_Daily`) y guardar CSV locales.
+- [x] Parsear fechas correctamente y estandarizarlas para trabajo temporal.
+- [x] Ordenar cronológicamente y eliminar duplicados.
+- [ ] Quedarse con la intersección temporal entre NAVs y factores.
 
 **Qué justificar:**
-- por qué se usa solo rango común;
-- impacto de perder datos fuera de intersección.
+- [ ] por qué se usa solo rango común;
+- [ ] impacto de perder datos fuera de intersección.
 
+**Pendiente transversal de documentación (fase 2):**
+- [ ] Revisar y homogeneizar todos los markdown de esta fase (2, 2.1, 2.2, 2.3, 2.4, 2.5) para que reflejen exactamente lo implementado y las decisiones metodológicas.
 ---
 
 ### 3) EDA mínimo pero sólido
