@@ -206,5 +206,9 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# Serialized model artifacts
+# --- Large binaries / datasets ---
 *.pickle
+*.pkl
+
+# --- Heavy notebook (do not track) ---
+DOCS_CLASE/MachineLearning/src/MIAX ML - 06 Dimensionality Reduction.ipynb
