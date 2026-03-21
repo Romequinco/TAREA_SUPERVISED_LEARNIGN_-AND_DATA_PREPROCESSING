@@ -211,6 +211,10 @@ __marimo__/
 *.pkl
 *.parquet
 
+# Archivo pesado concreto del proyecto (bloqueo explícito)
+panel_diario_universo.parqeut
+panel_diario_universo.parquet
+
 # --- Heavy notebook (do not track) ---
 DOCS_CLASE/MachineLearning/src/MIAX ML - 06 Dimensionality Reduction.ipynb
 
