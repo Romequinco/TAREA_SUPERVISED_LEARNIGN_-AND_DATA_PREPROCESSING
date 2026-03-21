@@ -34,7 +34,7 @@ Organizar el notebook en secciones:
 
 ### 2) Carga y alineación temporal
 
-- Cargar `navs.pickle` (NAVs de fondos).
+- Cargar `navs.pickle` (NAVs de fondos). 
 - Cargar factores desde `Asia_Pacific_ex_Japan_3_Factors_Daily.csv`.
 - Parsear fechas correctamente y ponerlas como índice.
 - Ordenar cronológicamente y eliminar duplicados.
