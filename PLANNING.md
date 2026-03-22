@@ -33,54 +33,17 @@ Organizar el notebook en secciones:
 HACER AL FINAL
 
 ---
-
-### 2) Carga y alineación temporal
-
-- [x] Cargar `navs.pickle` (NAVs de fondos).  
-- [x] Cargar factores (`Asia_Pacific_ex_Japan_3_Factors_Daily` + `Asia_Pacific_ex_Japan_MOM_Factor_Daily`) y guardar CSV locales.
-- [x] Parsear fechas correctamente y estandarizarlas para trabajo temporal.
-- [x] Ordenar cronológicamente y eliminar duplicados.
-- [ ] Quedarse con la intersección temporal entre NAVs y factores.
-
-**Qué justificar:**
-- [ ] por qué se usa solo rango común;
-- [ ] impacto de perder datos fuera de intersección.
-
 **Pendiente transversal de documentación (fase 2):**
 - [ ] Revisar y homogeneizar todos los markdown de esta fase (2, 2.1, 2.2, 2.3, 2.4, 2.5) para que reflejen exactamente lo implementado y las decisiones metodológicas.
 ---
 
-### 3) EDA mínimo pero sólido
+### Tabla de control antes/después
 
-Mostrar con `print` + gráficos:
-
-- tamaño de los datasets (`shape`)
-- tipos de datos (`dtypes`)
-- valores nulos por columna y por fecha
-- fondos con más faltantes
-- distribución de precios/NAVs
-- distribución de retornos
-- comportamiento de factores
-
-**Gráficos recomendados:**
-- barras de missing values
-- líneas de NAV para una muestra de fondos
-- histogramas/boxplots de retornos
-- matriz de correlación de factores
-
----
-
-### 4) Limpieza de datos (reglas explícitas)
-
-- Eliminar fondos con demasiados faltantes (definir umbral, por ejemplo 30%).
-- Aplicar imputación simple si procede (`ffill`/`bfill`) y justificar.
-- Eliminar o tratar valores no positivos antes de calcular log-retornos.
-- Tratar outliers extremos solo si están distorsionando resultados.
-
-**Qué justificar:**
-- por qué ese umbral de faltantes;
-- por qué ese método de imputación;
-- por qué se aplica/no se aplica tratamiento de outliers.
+| Métrica | Antes | Después A | Después B |
+|---------|-------|-----------|-----------|
+| N fondos | 24,819 | ~17,000–20,000 | idem |
+| N filas | 50,134,380 | ~40M–45M | idem |
+| % NAV null | 41.25% | ~35–38% | según imputación |
 
 ---
 
