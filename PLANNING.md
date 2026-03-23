@@ -14,7 +14,8 @@ El objetivo es priorizar la **explicación y justificación de decisiones** sobr
 ---
 
 ## Plan paso a paso
-
+  AÑADIR FILTRADO TEMPORAL PARA SELECIONAR FONDOS
+  
 ### 1) Estructura del notebook
 
 Organizar el notebook en secciones:
