@@ -15,7 +15,7 @@ El objetivo es priorizar la **explicación y justificación de decisiones** sobr
 
 ## Plan paso a paso
   AÑADIR FILTRADO TEMPORAL PARA SELECIONAR FONDOS
-  
+
 ### 1) Estructura del notebook
 
 Organizar el notebook en secciones:
@@ -36,34 +36,6 @@ HACER AL FINAL
 ---
 **Pendiente transversal de documentación (fase 2):**
 - [ ] Revisar y homogeneizar todos los markdown de esta fase (2, 2.1, 2.2, 2.3, 2.4, 2.5) para que reflejen exactamente lo implementado y las decisiones metodológicas.
----
-
-### Tabla de control antes/después
-
-| Métrica | Antes | Después A | Después B |
-|---------|-------|-----------|-----------|
-| N fondos | 24,819 | ~17,000–20,000 | idem |
-| N filas | 50,134,380 | ~40M–45M | idem |
-| % NAV null | 41.25% | ~35–38% | según imputación |
-
----
-
-### 5) Preprocesado y construcción de variables
-
-- Transformar NAVs a log-retornos.
-- Convertir factores a formato numérico correcto (porcentaje vs decimal).
-- Alinear factores (`X`) con variable objetivo (`y`) en tiempo.
-- Crear variables predictoras simples:
-  - factores actuales/rezagados
-  - medias móviles / volatilidad reciente (si quieres añadir señal)
-
-Definir objetivo principal:
-
-1. **Regresión:** predecir retorno futuro (variable continua)
-2. **Clasificación:** predecir dirección del retorno (sube/baja)
-
-**Recomendación:** implementar ambos de forma sencilla, pero centrar conclusiones en uno.
-
 ---
 
 ### 6) Split temporal (sin leakage)
