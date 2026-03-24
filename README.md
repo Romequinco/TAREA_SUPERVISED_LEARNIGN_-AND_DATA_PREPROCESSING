@@ -1,5 +1,21 @@
-# TAREA_SUPERVISED_LEARNIGN_-AND_DATA_PREPROCESSING
-Tarea del bloque supervised learning del grado mIAx
+# TAREA_SUPERVISED_LEARNIGN_AND_DATA_PREPROCESSING
+> **Advertencia importante:** el archivo `navs.pickle` no está incluido en este repositorio por tamaño.  
+> Sin ese archivo, **no se puede re-ejecutar el notebook completo desde cero**.
+
+El notebook `TAREA.ipynb` está **debidamente ejecutado y documentado** con resultados finales.
+
+## Referencias usadas
+- `MIAX ML - 01 Data Preprocessing.ipynb`
+- `MIAX ML - 03 Linear Regression.ipynb`
+
+## Datos principales
+- `navs.pickle` (no incluido en repo)
+- Factores Fama-French Asia ex-Japan (sí incluidos/procesados)
+
+## Nota de reproducibilidad
+Para reproducir todo el pipeline:
+1. Añadir `navs.pickle` en la ruta esperada del proyecto.
+2. Ejecutar `TAREA.ipynb` de inicio a fin.
 
 ## Gestión de datos pesados
 
@@ -7,11 +23,5 @@ Por tamaño, los archivos de datos no se versionan en GitHub:
 
 - `*.pickle` / `*.pkl`
 - `*.parquet`
-
-Esto evita superar límites de GitHub y mantener el repositorio ligero.
-
-### Cómo reproducir los datos
-1. Ejecutar las celdas del notebook que generan los datasets (`pickle -> parquet/csv`).
-2. O descargar los ficheros desde almacenamiento externo (por ejemplo, Google Drive) y colocarlos en `data/`.
 
 > Nota: en este proyecto, los `.parquet` se generan localmente para análisis, pero no se suben al repositorio.
