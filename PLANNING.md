@@ -1,45 +1,10 @@
-## Plan de rehacer el notebook y retoques (listo para copiar/pegar)
-
-### Objetivo inmediato
-- Rehacer `TAREA.ipynb` enfocado a: limpieza mínima y medición de sesgo Asia con OLS (betas, p-values, t-stats, R² ajustado), sin features/modelado extra.
-- Acción: duplicar `TAREA.ipynb`, recortar a lo esencial y añadir los bloques de fines de semana, outliers, OLS y selección por umbrales.
-
+## Plan de rehacer el notebook y retoques 
 ### Tabla rápida: Objetivo y Acción
 
 | Item | Descripción |
 |---|---|
 | Objetivo | Rehacer `TAREA.ipynb` para medir sesgo Asia con OLS (β, p, t, R² adj.) con limpieza mínima |
 | Acción | Duplicar el notebook, recortar a lo esencial y añadir bloques de fines de semana, outliers, OLS y umbrales |
-
-### Qué reutilizar y qué recortar
-
-#### Reutilizar
-- 2.1–2.3: carga de `navs.pickle` y panel diario.
-- 2.4–2.5: factores Fama-French Asia ex Japan (+ MOM) y unificación de factores.
-- 3.x (EDA mínima): conservar solo lo necesario para justificar reglas (calidad básica, cobertura, frecuencia).
-- 4.1–4.2: limpieza y `ffill`, con cambios clave: filtrar fines de semana ANTES y limitar `ffill`.
-
-#### Recortar
-- 4.3–4.4: diagnósticos avanzados y recortes temporales complejos (dejarlos fuera en este hito).
-- 5.x: feature engineering y objetivo forward (no aplica en este hito).
-- Modelado adicional (Ridge/Lasso/ElasticNet, señales, carteras).
-
-### Tablas de “Qué reutilizar/recortar”
-
-#### Reutilizar
-| Sección | ¿Incluir? | Notas |
-|---|---|---|
-| 2.1–2.3 | Sí | Carga de `navs.pickle` y panel diario |
-| 2.4–2.5 | Sí | Fama-French Asia ex Japan (+ MOM) y unificación |
-| 3.x (EDA mínima) | Sí | Solo lo necesario: calidad/cobertura/frecuencia |
-| 4.1–4.2 | Sí | Filtrar fines de semana antes y limitar `ffill` |
-
-#### Recortar
-| Sección | ¿Incluir? | Notas |
-|---|---|---|
-| 4.3–4.4 | No | Diagnósticos avanzados y recortes temporales |
-| 5.x | No | Feature engineering y objetivo forward |
-| Modelado adicional | No | Ridge/Lasso/ElasticNet, señales, carteras |
 
 ### Retoques a implementar
 - Fines de semana: eliminar sábados y domingos antes de cualquier `ffill` para no aplanar la serie.
@@ -49,20 +14,10 @@
 - Retorno en exceso: usar `excess_ret = ret - RF` en semanal, perfectamente alineado con factores.
 - scaler?????????????????
 - mencionar la bilbiografia para el modelooo
+- retocar todos los mds d ela parte 4 para delante (semana diltro)
+
 
 ### Bloques de código para el “nuevo” notebook
-
-1) Filtrar fines de semana y ffill limitado
-
-```python
-# Asumimos daily_panel con columnas ['date','fund_id','nav']
-daily_panel['date'] = pd.to_datetime(daily_panel['date'])
-# Filtrar sábados (5) y domingos (6)
-daily_panel = daily_panel[daily_panel['date'].dt.weekday < 5]
-# Orden y ffill limitado para no matar volatilidad
-daily_panel = daily_panel.sort_values(['fund_id','date'])
-daily_panel['nav'] = daily_panel.groupby('fund_id')['nav'].ffill(limit=3)
-```
 
 2) Remuestreo semanal y retornos con tratamiento de outliers
 
