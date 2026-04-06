@@ -1,0 +1,61 @@
+fund_id,cluster,cluster_name,cluster_tipo,peso_pct,alpha_adj,beta_mkt_adj,t_active_ret_1y,r2,score_compuesto,asia_biased
+62589,1,Diversificador Global,Diversificador,5.000005000005,0.00151,-0.357,-1.8831,0.004,8.3868,False
+101743,0,Asia Puro Alta Volatilidad,Asia,3.246403246403246,0.00059,0.8107,0.3941,0.563,4.4318,True
+102347,0,Asia Puro Alta Volatilidad,Asia,3.2172032172032177,0.00058,0.8106,0.3843,0.5631,4.384,True
+163536,0,Asia Puro Alta Volatilidad,Asia,3.1466031466031468,0.00057,0.809,0.3017,0.6062,4.2683,True
+163535,0,Asia Puro Alta Volatilidad,Asia,3.1087031087031085,0.00056,0.8098,0.2853,0.6065,4.2061,True
+104011,0,Asia Puro Alta Volatilidad,Asia,3.008903008903009,0.00053,0.8049,0.3397,0.5691,4.0426,True
+174133,1,Diversificador Global,Diversificador,2.5277025277025276,0.00051,-0.0517,-0.6201,0.0281,3.3485,False
+245164,2,Diversificador Global,Diversificador,2.4465024465024463,-0.0,0.0168,-2.0353,0.0202,-0.4127,False
+60693,2,Diversificador Global,Diversificador,2.435702435702436,-0.0,0.0003,-2.0592,0.0011,-0.4148,False
+54418,2,Diversificador Global,Diversificador,2.3278023278023277,-0.0,0.0005,-2.0509,0.0026,-0.4358,False
+127074,2,Diversificador Global,Diversificador,2.3000023000023,0.0,0.0373,-2.1087,0.0162,-0.4412,False
+139061,2,Diversificador Global,Diversificador,2.232002232002232,-1e-05,0.0002,-2.0668,0.0007,-0.4545,False
+149296,0,Asia Puro Alta Volatilidad,Asia,2.2182022182022183,0.00029,0.8932,0.446,0.7003,2.7467,True
+248157,0,Asia Puro Alta Volatilidad,Asia,2.1896021896021898,0.00028,0.8806,0.515,0.6268,2.6998,True
+279980,0,Asia Puro Alta Volatilidad,Asia,2.0995020995020997,0.00028,0.8815,0.2311,0.5542,2.5521,True
+157661,0,Asia Puro Alta Volatilidad,Asia,2.0710020710020713,0.00026,0.8414,0.327,0.5339,2.5054,True
+144478,0,Asia Puro Alta Volatilidad,Asia,2.0633020633020633,0.00025,0.9021,0.4483,0.5008,2.4928,True
+103714,0,Asia Puro Alta Volatilidad,Asia,2.0531020531020534,0.00031,0.9182,-0.1654,0.6075,2.4761,True
+127073,2,Diversificador Global,Diversificador,2.021902021902022,-0.0,0.0373,-2.1618,0.0162,-0.4953,False
+93038,0,Asia Puro Alta Volatilidad,Asia,2.0177020177020175,0.00027,0.8961,0.0895,0.5003,2.4181,True
+87958,0,Asia Puro Alta Volatilidad,Asia,1.9918019918019918,0.00025,0.8793,0.2778,0.5279,2.3756,True
+103711,0,Asia Puro Alta Volatilidad,Asia,1.9823019823019823,0.00029,0.9199,-0.1861,0.6096,2.3601,True
+279984,0,Asia Puro Alta Volatilidad,Asia,1.9751019751019752,0.00025,0.8831,0.1801,0.5552,2.3483,True
+103717,0,Asia Puro Alta Volatilidad,Asia,1.8797018797018796,0.00026,0.8036,-0.1739,0.5015,2.1919,True
+75934,2,Diversificador Global,Diversificador,1.8662018662018665,-2e-05,0.0137,-2.0649,0.0218,-0.5256,False
+116072,2,Diversificador Global,Diversificador,1.8637018637018636,-1e-05,-0.0082,-2.1508,0.0058,-0.5261,False
+87957,0,Asia Puro Alta Volatilidad,Asia,1.861001861001861,0.00021,0.8794,0.2247,0.528,2.1613,True
+176717,2,Diversificador Global,Diversificador,1.847901847901848,-1e-05,-0.0075,-2.1722,0.005,-0.5292,False
+190098,0,Asia Puro Alta Volatilidad,Asia,1.822001822001822,0.00014,0.9135,0.8056,0.5131,2.0973,True
+103712,0,Asia Puro Alta Volatilidad,Asia,1.8181018181018183,0.00024,0.8008,-0.1913,0.5032,2.0909,True
+4826,2,Diversificador Global,Diversificador,1.7484017484017484,-1e-05,-0.0079,-2.1861,0.0055,-0.5486,False
+104099,0,Asia Puro Alta Volatilidad,Asia,1.6843016843016843,0.0002,0.8342,-0.0837,0.5143,1.8717,True
+150998,2,Diversificador Global,Diversificador,1.5603015603015604,-3e-05,0.015,-2.0899,0.0322,-0.5852,False
+116073,2,Diversificador Global,Diversificador,1.5300015300015302,-1e-05,-0.0058,-2.2315,0.0065,-0.591,False
+159882,1,Diversificador Global,Diversificador,1.347901347901348,0.00025,0.0263,-1.5056,0.0119,1.3709,False
+16098,1,Diversificador Global,Diversificador,1.338701338701339,0.00014,-0.0038,-0.4455,0.0029,1.3553,False
+285385,1,Diversificador Global,Diversificador,1.3033013033013032,0.00022,-0.0004,-1.3436,0.0012,1.2961,False
+57127,1,Diversificador Global,Diversificador,1.2803012803012803,0.00021,0.0355,-1.2545,0.0164,1.2576,False
+57152,1,Diversificador Global,Diversificador,1.2262012262012263,0.00019,0.0375,-1.2616,0.0166,1.1668,False
+285384,1,Diversificador Global,Diversificador,1.135101135101135,0.00018,-0.0015,-1.364,0.0014,1.0141,False
+65079,1,Diversificador Global,Diversificador,1.103901103901104,8e-05,-0.0032,-0.5324,0.0025,0.9617,False
+8743,1,Diversificador Global,Diversificador,1.091201091201091,0.00016,-0.0307,-1.3002,0.0208,0.9406,False
+77126,1,Diversificador Global,Diversificador,1.0465010465010465,0.00019,0.0,-1.7483,0.0149,0.8655,False
+51751,1,Diversificador Global,Diversificador,1.043101043101043,0.00011,-0.0015,-0.9302,0.0272,0.8598,False
+161832,1,Diversificador Global,Diversificador,1.0246010246010246,0.00013,0.041,-1.2172,0.0105,0.8289,False
+89511,1,Diversificador Global,Diversificador,1.0044010044010045,0.00013,0.0211,-1.2947,0.0385,0.795,False
+154358,1,Diversificador Global,Diversificador,0.9912009912009911,0.00012,0.0412,-1.2287,0.0106,0.7729,False
+244337,1,Diversificador Global,Diversificador,0.9902009902009903,0.00016,-0.0281,-1.6256,0.0079,0.7712,False
+16097,1,Diversificador Global,Diversificador,0.9724009724009725,9e-05,-0.0002,-0.9499,0.0025,0.7414,False
+285383,1,Diversificador Global,Diversificador,0.9567009567009568,0.00013,-0.0006,-1.4052,0.0012,0.7151,False
+285798,1,Diversificador Global,Diversificador,0.9454009454009454,0.00016,-0.0001,-1.7496,0.0134,0.6961,False
+202573,1,Diversificador Global,Diversificador,0.9438009438009438,0.00014,0.0145,-1.5034,0.0233,0.6934,False
+2700,2,Diversificador Global,Diversificador,0.7964007964007964,-3e-05,-0.0228,-2.3327,0.0161,-0.7338,False
+178723,2,Diversificador Global,Diversificador,0.6554006554006554,-6e-05,0.0014,-2.0987,0.0323,-0.7612,False
+124065,2,Diversificador Global,Diversificador,0.4373004373004374,-6e-05,0.0137,-2.0875,0.0099,-0.8036,False
+69018,2,Diversificador Global,Diversificador,0.37420037420037416,-5e-05,0.0423,-2.2618,0.0498,-0.8159,False
+255869,2,Diversificador Global,Diversificador,0.3248003248003248,-7e-05,0.0367,-2.0763,0.032,-0.8255,False
+168678,2,Diversificador Global,Diversificador,0.23700023700023698,-6e-05,0.0002,-2.2147,0.0003,-0.8426,False
+3768,2,Diversificador Global,Diversificador,0.21590021590021594,-8e-05,0.0352,-2.0488,0.0444,-0.8467,False
+641002,2,Diversificador Global,Diversificador,0.051400051400051404,-8e-05,0.0002,-2.1112,0.0018,-0.8787,False
