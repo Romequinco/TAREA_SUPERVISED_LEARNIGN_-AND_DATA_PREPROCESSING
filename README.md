@@ -1,27 +1,67 @@
-# TAREA_SUPERVISED_LEARNIGN_AND_DATA_PREPROCESSING
-> **Advertencia importante:** el archivo `navs.pickle` no está incluido en este repositorio por tamaño.  
-> Sin ese archivo, **no se puede re-ejecutar el notebook completo desde cero**.
+# TAREA - Data Preprocessing and Supervised Learning
+---
 
-El notebook `TAREA.ipynb` está **debidamente ejecutado y documentado** con resultados finales.
+## Contexto y enfoque
 
-## Referencias usadas
-- `MIAX ML - 01 Data Preprocessing.ipynb`
-- `MIAX ML - 03 Linear Regression.ipynb`
+El dataset principal es `navs.pickle`, complementado con factores Fama-French que se descargan durante el flujo de trabajo.
 
-## Datos principales
-- `navs.pickle` (no incluido en repo)
-- Factores Fama-French Asia ex-Japan (sí incluidos/procesados)
+La lógica del proyecto separa claramente:
 
-## Nota de reproducibilidad
-Para reproducir todo el pipeline:
-1. Añadir `navs.pickle` en la ruta esperada del proyecto.
-2. Ejecutar `TAREA.ipynb` de inicio a fin.
+1. **Estructura de datos** (qué variables y objetos existen)
+2. **Alineación temporal** (consistencia cronológica)
+3. **Persistencia** (versionado y reutilización del dato)
 
-## Gestión de datos pesados
+Esta separación mejora la trazabilidad y evita mezclar limpieza avanzada con decisiones de alineación temporal.
 
-Por tamaño, los archivos de datos no se versionan en GitHub:
+---
 
-- `*.pickle` / `*.pkl`
-- `*.parquet`
+## Objetivo y tesis financiera
 
-> Nota: en este proyecto, los `.parquet` se generan localmente para análisis, pero no se suben al repositorio.
+### Hipótesis
+
+Asia tendrá mejor comportamiento relativo frente a otras regiones.
+
+### Objetivo principal
+
+Construir un fondo de fondos con sesgo Asia, con una cartera robusta, interpretable y metodológicamente consistente.
+
+### Restricciones de inversión
+
+- Asignación objetivo: **70% Asia / 30% diversificación**
+- Límite por fondo: **5%**
+- Aplicación de filtros mínimos de calidad
+
+---
+
+## Datos y reproducibilidad
+
+> **Importante:** por limitaciones de tamaño, el archivo `navs.pickle` no está incluido en el repositorio ni embebido en el notebook.
+
+Sin este archivo, no es posible re-ejecutar el pipeline completo desde cero.  
+Para reproducir localmente, debes añadir `navs.pickle` en la ruta esperada por el notebook.
+
+---
+
+## Flujo general del trabajo
+
+1. Carga de NAVs desde `navs.pickle`
+2. Descarga e integración de factores Fama-French
+3. Estandarización de fechas y orden cronológico
+4. Unificación del universo en formato diario largo
+5. Controles de calidad y tratamiento de faltantes
+6. Modelado supervisado (regresión y variantes)
+7. Evaluación de resultados y análisis financiero
+
+---
+
+## Estructura sugerida del repositorio
+
+.
+├── FONDO.ipynb
+├── README.md
+├── data/
+│   └── daily_universe/
+└── DOCS_CLASE/
+    └── MachineLearning/
+        └── dataset/
+            └── navs.pickle   # (no versionado)
